@@ -1,0 +1,208 @@
+<!-- 
+<h2>My Heroes</h2>
+<ul class="heroes">
+  <li *ngFor="let hero of heroes"
+    [class.selected]="hero === selectedHero"
+    (click)="onSelect(hero)">
+    <span class="badge">{{hero.id}}</span> {{hero.name}}
+  </li>
+</ul>
+<h3>flat Buttons</h3>
+<div class="example-button-row" fxLayout="row" fxLayoutAlign="center center" fxLayoutGap="15px">
+  <button mat-flat-button>Basic</button>
+  <button mat-flat-button color="accent">Accent</button>
+  <button mat-flat-button color="warn">Warn</button>
+  <button mat-flat-button disabled>Disabled</button>
+  <a mat-flat-button routerLink=".">Link</a>
+</div>
+-->
+
+<div class="widget-container" fxLayout="row" fxLayout.xs="column" fxLayoutAlign="start" fxLayoutGap="10px"
+>
+  <div fxFlex="20%">
+    <form>
+      <mat-card class="filter-trade-card">
+        <mat-card-content >
+          <p>Filter Trades</p>
+          <mat-form-field>
+            <mat-label>Trades</mat-label>
+            <mat-select id="filter_trades" name="filter_trades">
+              <mat-option value="all">View All</mat-option>
+              <mat-option value="allWins">All Wins</mat-option>
+              <mat-option value="allLosses">All Loses</mat-option>
+            </mat-select>
+          </mat-form-field>
+          <mat-form-field>
+            <mat-label>Trades</mat-label>
+            <mat-select id="filter_trades" name="filter_trades">
+              <mat-option value="all">View All</mat-option>
+              <mat-option value="allWins">All Wins</mat-option>
+              <mat-option value="allLosses">All Loses</mat-option>
+            </mat-select>
+          </mat-form-field>
+        </mat-card-content>
+      </mat-card>
+    </form>
+  </div>
+  <div fxFlex="20">
+    <mat-card class="total_widget_card">
+      <mat-card-header fxLayoutAlign="center">
+        <mat-card-title class="mat-card-wid-title">48</mat-card-title>
+        <mat-card-subtitle>
+          <mat-icon class="mat-card-wid-icon">grade</mat-icon>
+        </mat-card-subtitle>
+      </mat-card-header>
+      <mat-card-content>
+        <p class="total-wins">
+          Total Wins
+        </p>
+      </mat-card-content>
+    </mat-card>
+  </div>
+  <div fxFlex="20">
+    <mat-card class="total_widget_card">
+      <mat-card-header fxLayoutAlign="center">
+        <mat-card-title class="mat-card-wid-title">48</mat-card-title>
+        <mat-card-subtitle>
+          <mat-icon class="mat-card-wid-icon">bar_chart</mat-icon>
+        </mat-card-subtitle>
+      </mat-card-header>
+      <mat-card-content>
+        <p class="total-wins">
+          Total Losses
+        </p>
+      </mat-card-content>
+    </mat-card>
+  </div>
+  <div fxFlex="20">
+    <mat-card class="total_widget_card">
+      <mat-card-header fxLayoutAlign="center">
+        <mat-card-title class="mat-card-wid-title">48</mat-card-title>
+        <mat-card-subtitle>
+          <mat-icon class="mat-card-wid-icon">compare_arrows</mat-icon>
+        </mat-card-subtitle>
+      </mat-card-header>
+      <mat-card-content>
+        <p class="total-wins">
+          Total Trades
+        </p>
+      </mat-card-content>
+    </mat-card>
+  </div>
+  <div fxFlex="20">
+    <mat-card class="total_widget_card">
+      <mat-card-header fxLayoutAlign="center">
+        <mat-card-title class="mat-card-wid-title">48</mat-card-title>
+        <mat-card-subtitle>
+          <mat-icon class="mat-card-wid-icon">trending_up</mat-icon>
+        </mat-card-subtitle>
+      </mat-card-header>
+      <mat-card-content>
+        <p class="total-wins">
+          Percentage
+        </p>
+      </mat-card-content>
+    </mat-card>
+  </div>
+</div>
+
+<div class="" fxLayout="row" fxLayout.xs="column" fxLayoutAlign="start" fxLayoutGap="10px">
+    <div  fxFlex="33.3">
+        <mat-card>
+            <mat-card-header fxLayoutAlign="start center">
+              <mat-card-title >Trade Number</mat-card-title>
+              
+            </mat-card-header>
+            <mat-card-content>
+                <div fxFlex="50"  fxLayoutAlign="start end">
+                    <div class="image_container">
+                            <svg class="trade-image-svg" xmlns="http://www.w3.org/2000/svg" width="100%" height="100%">
+                                <g>
+                                    <rect x="0" y="0" width="100%" height="100%" fill="#00695c"></rect>
+                                    <text x="50%" y="50%" text-anchor="middle" font-size="25" fill="#fff">
+                                        ABC
+                                    </text>
+                                </g>
+                            </svg>
+                        <div >
+                            <!--<app-lightbox [images]="trade.images" [type]="'trade_details'"></app-lightbox>-->
+                        </div>
+                    </div>
+                </div>
+                <table class="details_table" fxFlex="50">
+                    <tr>
+                        <td>Ticker</td>
+                        <td>123</td>
+                    </tr>
+                    <tr>
+                        <td>Volume:</td>
+                        <td>123</td>
+                    </tr>
+                    <tr>
+                        <td>Date:</td>
+                        <td>123</td>
+                    </tr>
+                    <tr>
+                        <td>Entry:</td>
+                        <td>123</td>
+                    </tr>
+                    <tr>
+                        <td>Exit:</td>
+                        <td>123</td>
+                    </tr>
+                    <tr>
+                        <td>Gain:</td>
+                        <!-- <td>{{trade.gain()}}</td> -->
+                        <td>123</td>
+                    </tr>
+                    <tr>
+                        <td>%:</td>
+                        <td>123</td>
+                    </tr>
+                    <tr>
+                        <td>Date:</td>
+                        <td>123</td>
+                    </tr>
+            </table>
+            
+            </mat-card-content>
+            <mat-card-actions fxLayoutAlign="end center" fxLayoutGap="10px">
+                <button mat-flat-button color="primary"><mat-icon>thumb_up</mat-icon></button>
+                <button mat-flat-button color="warn"><mat-icon>share</mat-icon></button>
+              </mat-card-actions>
+          </mat-card>
+    </div>
+</div>
+
+<!-- 
+<h3>flat Buttons</h3>
+<div class="example-button-row2" fxLayout="row" fxLayoutAlign="center center" fxLayoutGap="15px">
+  <button mat-fab aria-label="Heart Icon" color="warn" matTooltip="Delete" matTooltipPosition="left">
+    <mat-icon>delete</mat-icon>
+  </button>
+  <button mat-fab aria-label="Heart Icon" color="primary" matTooltip="Edit" matTooltipPosition="left">
+    <mat-icon>edit</mat-icon>
+  </button>
+  <button mat-fab aria-label="Heart Icon" color="basic" matTooltip="Add" matTooltipPosition="left">
+    <mat-icon>add</mat-icon>
+  </button>
+</div>
+
+<div class="container" fxLayout="row">
+<div class="item item-1" fxFlex="50%">Item 1</div>
+<div class="item item-2" fxFlex="20%">Item 2</div>
+<div class="item item-3">Item 3</div>
+</div>
+
+<div *ngIf="selectedHero">
+
+  <h2>{{selectedHero.name | uppercase}} Details</h2>
+  <div><span>id: </span>{{selectedHero.id}}</div>
+  <div>
+    <label>name:
+      <input [(ngModel)]="selectedHero.name" placeholder="name"/>
+    </label>
+  </div>
+
+</div>
+-->

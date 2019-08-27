@@ -1,0 +1,97 @@
+/* HeroesComponent's private CSS styles */
+.heroes {
+    margin: 0 0 2em 0;
+    list-style-type: none;
+    padding: 0;
+    width: 15em;
+  }
+  .heroes li {
+    cursor: pointer;
+    position: relative;
+    left: 0;
+    background-color: #EEE;
+    margin: .5em;
+    padding: .3em 0;
+    height: 1.6em;
+    border-radius: 4px;
+  }
+  .heroes li:hover {
+    color: #607D8B;
+    background-color: #DDD;
+    left: .1em;
+  }
+  .heroes li.selected {
+    background-color: #CFD8DC;
+    color: white;
+  }
+  .heroes li.selected:hover {
+    background-color: #BBD8DC;
+    color: white;
+  }
+  .heroes .badge {
+    display: inline-block;
+    font-size: small;
+    color: white;
+    padding: 0.8em 0.7em 0 0.7em;
+    background-color:#405061;
+    line-height: 1em;
+    position: relative;
+    left: -1px;
+    top: -4px;
+    height: 1.8em;
+    margin-right: .8em;
+    border-radius: 4px 0 0 4px;
+  }
+
+
+  .example-button-row button {
+    width: 80px;
+   }
+
+   .widget-container{
+     margin-bottom: 15px;
+   }
+
+   .filter-trade-card p {
+    font-weight:bold;
+  }
+
+   .total_widget_card {
+     color: #fff;
+     height: 130px;
+     position:relative;
+     background-image: linear-gradient(to right, #40dd9a, #3bb2b8) !important;
+   }
+
+   .mat-card-wid-title {
+     font-size:50px;
+   }
+
+   .mat-card-wid-icon {
+     font-size:30px;
+   }
+
+   .total-wins {
+    text-transform: uppercase;
+    font-weight: bold;
+   }
+
+   table, td, th {
+    border: 1px solid #dbdbdb;
+  }
+   
+  table {
+    width: 100%;
+  }
+
+
+  tr {
+    height: 30px;
+  }
+
+  td:nth-child(2){ 
+    text-align: left;
+    padding: 4px;
+    font-weight: bold;
+}
+
