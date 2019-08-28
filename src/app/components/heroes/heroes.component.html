@@ -17,6 +17,53 @@
 </div>
 -->
 
+<!-- -->
+<div fxLayout="column" fxLayoutGap="5px" fxLayout.gt-sm="row">
+  <div fxFlex="20">1. One</div>
+  <div fxFlex="20">2. Two</div>
+  <div fxFlex="20">3. Three</div>
+  <div fxFlex="20">4. Four</div>
+  <div fxFlex="20">5. Five</div>
+</div>
+
+<br>
+
+<div fxLayout="row" fxLayout.gt-xs="column">
+  <mat-card class="example-card">
+    <mat-card-header fxLayoutAlign="space-between start">
+      <mat-card-title>Ticker Name</mat-card-title>
+      <mat-card-subtitle>August 29, 2019</mat-card-subtitle>
+      <mat-menu>
+        <span>
+            <button mat-menu-item>Update</button>
+        </span>
+    </mat-menu>
+    <div fxLayout="row" fxLayoutAlign="end center">
+        <button mat-icon-button matTooltip="Update">
+            <mat-icon>more_vert</mat-icon>
+        </button>
+    </div>
+    </mat-card-header>
+    <img mat-card-image src="https://www.pltrades.com/traders/watchlist/assets/img/422288.png" alt="Photo of a Shiba Inu">
+    <mat-card-content>
+      <p>
+        The Shiba Inu is the smallest of the six original and distinct spitz breeds of dog from Japan.
+        A small, agile dog that copes very well with mountainous terrain, the Shiba Inu was originally
+        bred for hunting.
+      </p>
+    </mat-card-content>
+
+    <mat-card-actions fxLayoutAlign="start end" fxLayoutGap="10px">
+    <mat-icon>thumb_up</mat-icon>
+    <mat-icon>share</mat-icon>
+  </mat-card-actions>
+
+
+  </mat-card>
+</div>
+
+<br>
+
 <div class="widget-container" fxLayout="row" fxLayout.xs="column" fxLayoutAlign="start" fxLayoutGap="10px"
 >
   <div fxFlex="20%">
@@ -178,6 +225,10 @@
           </mat-card>
     </div>
 </div>
+<br>
+
+
+
 
 <!-- 
 <h3>flat Buttons</h3>
