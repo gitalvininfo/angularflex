@@ -1,0 +1,75 @@
+/* Add and Sold Button */
+.entry-list-btn {
+  width: 100px;
+  background-color: #008566;
+}
+
+/* Add and Sold Button Div */
+div.entry-list-btn-keys {
+  margin-top: 15px;
+}
+
+
+table,
+td,
+th {
+  border: 1px solid #dbdbdb;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+  margin: 20px 0px 15px 0px !important;
+}
+
+tr {
+  height: 35px;
+}
+
+td:nth-child(2) {
+  text-align: center;
+  font-weight: bold;
+}
+
+td:nth-child(1) {
+  text-align: center;
+}
+
+.total {
+  background-color: #f7faf9;
+  font-weight: bold;
+}
+
+tr:hover {
+  background-color: #f5f5f5;
+}
+
+
+div.number-trades {
+  margin-top: 30px;
+}
+
+.trade-header-wins {
+  font-size: 40px;
+  font-weight: bold;
+  color: #008566;
+}
+
+.trade-header-losses {
+  font-size: 40px;
+  font-weight: bold;
+  color: #f71616;
+}
+
+.trade-header-total {
+  font-size: 40px;
+  font-weight: bold;
+}
+
+.trade-content {
+  font-size: 15px;
+}
+
+::ng-deep .mat-select-arrow {
+  visibility: hidden;
+}

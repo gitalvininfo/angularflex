@@ -9,11 +9,13 @@ import { AppRoutingModule } from './app-routing.module';
 import { FlexLayoutModule } from '@angular/flex-layout';
 import 'hammerjs';
 import { HeroesComponent } from './components/heroes/heroes.component';
+import { TemplatesComponent } from './components/templates/templates.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    HeroesComponent
+    HeroesComponent,
+    TemplatesComponent
   ],
   imports: [
     BrowserModule,
