@@ -1,5 +1,5 @@
 <div fxLayout="column" fxLayout.gt-sm="row" fxLayoutGap="10px">
-  <mat-card fxFlex="20">
+  <mat-card fxFlex="25">
     <mat-card-header fxLayoutAlign="space-between start">
       <mat-card-title>Entry List</mat-card-title>
       <mat-icon>more_horiz</mat-icon>
@@ -55,53 +55,7 @@
     </mat-card-actions>
   </mat-card>
 
-  <mat-card fxFlex="20">
-    <mat-card-header fxLayoutAlign="space-between start">
-      <mat-card-title>Number of Trades</mat-card-title>
-      <mat-icon>more_horiz</mat-icon>
-    </mat-card-header>
-    <mat-divider></mat-divider>
-    <mat-card-content>
-      <div
-        class="number-trades"
-        fxLayout="column"
-        fxLayoutAlign="center center"
-      >
-        <div class="trade-header-wins">
-          200
-        </div>
-        <div class="trade-content">
-          Number of Wins
-        </div>
-      </div>
-      <div
-        class="number-trades"
-        fxLayout="column"
-        fxLayoutAlign="center center"
-      >
-        <div class="trade-header-losses">
-          200
-        </div>
-        <div class="trade-content">
-          Number of Losses
-        </div>
-      </div>
-      <div
-        class="number-trades"
-        fxLayout="column"
-        fxLayoutAlign="center center"
-      >
-        <div class="trade-header-total">
-          400
-        </div>
-        <div class="trade-content">
-          Number of Trades
-        </div>
-      </div>
-    </mat-card-content>
-  </mat-card>
-
-  <mat-card fxFlex="20">
+  <mat-card fxFlex="25">
     <mat-card-header fxLayoutAlign="space-between start">
       <mat-card-title>
         Strategies or Rules
@@ -110,85 +64,170 @@
     </mat-card-header>
     <mat-divider></mat-divider>
     <mat-card-content>
-        <div fxLayout="column">
-          <mat-list>
-            <mat-list-item>
-              <mat-icon mat-list-icon>timeline</mat-icon>
-              <h4 mat-line>Strategy 1</h4>
-              <p mat-line> My Strategy 1</p>
-            </mat-list-item>
-            <mat-divider></mat-divider>
-            <mat-list-item>
-              <mat-icon mat-list-icon>timeline</mat-icon>
-              <h4 mat-line>Strategy 2</h4>
-              <p mat-line> My Strategy 2</p>
-            </mat-list-item>          
-          </mat-list>
-        </div>
+      <div fxLayout="column">
+        <mat-list>
+          <mat-list-item>
+            <mat-icon mat-list-icon>timeline</mat-icon>
+            <h4 mat-line>Strategy 1</h4>
+            <p mat-line>My Strategy 1</p>
+          </mat-list-item>
+          <mat-divider></mat-divider>
+          <mat-list-item>
+            <mat-icon mat-list-icon>timeline</mat-icon>
+            <h4 mat-line>Strategy 2</h4>
+            <p mat-line>My Strategy 2</p>
+          </mat-list-item>
+        </mat-list>
+      </div>
     </mat-card-content>
   </mat-card>
+      <mat-card fxFlex="50" style="height:85vh; overflow: scroll;">
+        <mat-card-header fxLayoutAlign="space-between start">
+          <mat-card-title> Privacy </mat-card-title>
+          <mat-icon>more_horiz</mat-icon>
+        </mat-card-header>
+        <mat-divider></mat-divider>
+        
+        <mat-card-content fxLayout="column">
+          <mat-form-field class="privacy-options">
+            <mat-icon matSuffix>lock</mat-icon>
+            <mat-select required placeholder="Account Privacy">
+              <mat-option>
+                Privacy 1
+              </mat-option>
+            </mat-select>
+          </mat-form-field>
+  
+          <mat-form-field class="privacy-options">
+            <mat-icon matSuffix>trending_up</mat-icon>
+            <mat-select placeholder="Trade Performance">
+              <mat-option>
+                Trade Performance
+              </mat-option>
+            </mat-select>
+          </mat-form-field>
 
-  <form action="" fxFlex>
-  <mat-card>
+          <mat-form-field class="privacy-options">
+              <mat-icon matSuffix>trending_up</mat-icon>
+              <mat-select placeholder="Trade Performance">
+                <mat-option>
+                  Trade Performance
+                </mat-option>
+              </mat-select>
+            </mat-form-field>
+
+          <mat-form-field class="privacy-options">
+              <mat-icon matSuffix>trending_up</mat-icon>
+              <mat-select placeholder="Trade Performance">
+                <mat-option>
+                  Trade Performance
+                </mat-option>
+              </mat-select>
+            </mat-form-field>
+  
+          <mat-form-field class="privacy-options">
+            <mat-icon matSuffix>bar_chart</mat-icon>
+            <mat-select placeholder="Trade Statistics">
+              <mat-option>
+                Trade Statistics
+              </mat-option>
+            </mat-select>
+          </mat-form-field>
+  
+          <mat-form-field class="privacy-options">
+            <mat-icon matSuffix>receipt</mat-icon>
+            <mat-select placeholder="Trade Details">
+              <mat-option>
+                Trade Details
+              </mat-option>
+            </mat-select>
+          </mat-form-field>
+
+          <mat-form-field class="privacy-options">
+              <mat-icon matSuffix>receipt</mat-icon>
+              <mat-select placeholder="Trade Details">
+                <mat-option>
+                  Trade Details
+                </mat-option>
+              </mat-select>
+            </mat-form-field>
+
+            <mat-form-field class="privacy-options">
+                <mat-icon matSuffix>receipt</mat-icon>
+                <mat-select placeholder="Trade Details">
+                  <mat-option>
+                    Trade Details
+                  </mat-option>
+                </mat-select>
+              </mat-form-field>
+  
+          <mat-form-field class="privacy-options">
+            <mat-icon matSuffix>email</mat-icon>
+            <mat-select placeholder="Email">
+              <mat-option>
+                Email
+              </mat-option>
+            </mat-select>
+          </mat-form-field>
+        </mat-card-content>
+  
+        <mat-divider></mat-divider>
+        <mat-card-actions fxLayoutAlign="end center">
+          <button mat-raised-button color="primary">
+            Update
+          </button>
+        </mat-card-actions>
+      </mat-card>    
+</div>
+<br>
+
+<div fxLayout="row">
+  <mat-card fxFlex="80">
     <mat-card-header fxLayoutAlign="space-between start">
-      <mat-card-title> Privacy </mat-card-title>
+      <mat-card-title>Number of Trades</mat-card-title>
       <mat-icon>more_horiz</mat-icon>
     </mat-card-header>
     <mat-divider></mat-divider>
-      <mat-card-content fxLayout="column">
-        <mat-form-field class="privacy-options">
-          <mat-icon matSuffix>lock</mat-icon>
-          <mat-select required placeholder="Account Privacy">
-            <mat-option>
-              Privacy 1
-            </mat-option>
-          </mat-select>
-        </mat-form-field>
-
-        <mat-form-field class="privacy-options">
-            <mat-icon matSuffix>trending_up</mat-icon>
-          <mat-select placeholder="Trade Performance">
-            <mat-option >
-              Trade Performance
-            </mat-option>
-          </mat-select>
-        </mat-form-field>
-
-        <mat-form-field class="privacy-options">
-            <mat-icon matSuffix>bar_chart</mat-icon>
-          <mat-select placeholder="Trade Statistics">
-            <mat-option>
-              Trade Statistics
-            </mat-option>
-          </mat-select>
-        </mat-form-field>
-
-        <mat-form-field class="privacy-options">
-            <mat-icon matSuffix>receipt</mat-icon>
-          <mat-select placeholder="Trade Details">
-            <mat-option>
-              Trade Details
-            </mat-option>
-          </mat-select>
-        </mat-form-field>
-
-        <mat-form-field class="privacy-options">
-            <mat-icon matSuffix>email</mat-icon>
-          <mat-select placeholder="Email">
-            <mat-option>
-             Email
-            </mat-option>
-          </mat-select>
-        </mat-form-field>
-      </mat-card-content>
-  
-  <mat-divider></mat-divider>
-  <mat-card-actions fxLayoutAlign="end center">
-    <button mat-raised-button color="primary">
-      Update
-    </button>
-  </mat-card-actions>
-
+    <mat-card-content fxLayout="row"
+    fxLayoutAlign="space-around start">
+      <div class="number-trades">
+        <div class="trade-header-wins" >
+          200
+        </div>
+        <div class="trade-content">
+          Number of Wins
+        </div>
+      </div>
+      
+      <div class="number-trades">
+        <div class="trade-header-wins" >
+          200
+        </div>
+        <div class="trade-content">
+          Number of Wins
+        </div>
+      </div>
+      
+      <div class="number-trades">
+        <div class="trade-header-wins" >
+          200
+        </div>
+        <div class="trade-content">
+          Number of Wins
+        </div>
+      </div>
+      
+      <div class="number-trades">
+        <div class="trade-header-wins" >
+          200
+        </div>
+        <div class="trade-content">
+          Number of Wins
+        </div>
+      </div>
+      
+        
+      
+    </mat-card-content>
   </mat-card>
-</form>
 </div>

@@ -53,6 +53,7 @@ div.number-trades {
   font-size: 40px;
   font-weight: bold;
   color: #008566;
+  text-align: center;
 }
 
 .trade-header-losses {
