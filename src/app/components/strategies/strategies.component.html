@@ -1,0 +1,65 @@
+<!--
+<div fxLayout="row">
+    <mat-card fxFlex="30">
+      <mat-card-title>Textarea</mat-card-title>
+        <mat-card-content>
+            <mat-list>
+                <mat-list-item>
+                  <mat-icon mat-list-icon>folder</mat-icon>
+                  <h4 mat-line>Strategy 1</h4>
+                  <h6 fxLayoutAlign="start center">Sept. 4, 2019</h6>
+                  <p mat-line> Sept. 4, 2019 </p>
+                </mat-list-item>
+                <mat-divider></mat-divider>
+                <mat-list-item>
+                    <mat-icon mat-list-icon>folder</mat-icon>
+                    <h4 mat-line>Strategy 1</h4>
+                    <p mat-line> Sept. 4, 2019 </p>
+                  </mat-list-item>
+              </mat-list>
+        </mat-card-content>
+    </mat-card>
+  </div>
+-->
+<div fxFlex="100" style="width:100%;">
+<mat-card>
+  <div fxLayout.gt-xs="row" fxLayout="column" fxLayoutGap="10px">
+    <!-- style="width:100%" after fxFlex="50"-->
+    <mat-form-field appearance="outline" fxFlex="50">
+        <mat-label>Firstname</mat-label>
+        <input matInput placeholder="Enter Firstname">
+        <mat-icon matSuffix>person</mat-icon>
+      </mat-form-field>
+      <mat-form-field appearance="outline" fxFlex="50">
+          <mat-label>Lastname</mat-label>
+          <input matInput placeholder="Enter Lastname">
+          <mat-icon matSuffix>person</mat-icon>
+        </mat-form-field>
+    </div>
+    <div fxLayout="column">
+        <mat-form-field appearance="outline" fxFlex>
+            <mat-label>Email</mat-label>
+            <input matInput placeholder="Enter Email">
+            <mat-icon matSuffix>email</mat-icon>
+        </mat-form-field>
+        <mat-form-field appearance="outline" fxFlex>
+            <mat-label>Username</mat-label>
+            <input matInput placeholder="Enter Username">
+            <mat-icon matSuffix>info</mat-icon>
+        </mat-form-field>
+        </div>
+        <div fxLayout.gt-xs="row" fxLayout="column" fxLayoutGap="10px">
+            <!-- style="width:100%" after fxFlex="50"-->
+            <mat-form-field appearance="outline" fxFlex="50">
+                <mat-label>Password</mat-label>
+                <input matInput placeholder="Enter Password">
+                <mat-icon matSuffix>lock</mat-icon>
+              </mat-form-field>
+              <mat-form-field appearance="outline" fxFlex="50">
+                  <mat-label>Confirm Password</mat-label>
+                  <input matInput placeholder="Enter Password">
+                  <mat-icon matSuffix>lock</mat-icon>
+                </mat-form-field>
+            </div>
+</mat-card>
+</div>
