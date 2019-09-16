@@ -26,3 +26,8 @@ h2 {
       }
 }
 
+.about {
+    text-align: justify;
+    line-height: 2.5;
+}
+
