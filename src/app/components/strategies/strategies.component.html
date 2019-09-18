@@ -134,7 +134,7 @@
  </mat-card>
 </div>
 -->
-<div fxFlex="15"></div>
+<!-- <div fxFlex="15"></div>
 <div fxFlex="70">
  <mat-card>
    <mat-card-title>Terms</mat-card-title>
@@ -158,4 +158,94 @@
    </mat-card-content>
  </mat-card>
 </div>
-<div fxFlex="15"></div>
+<div fxFlex="15"></div> -->
+
+<!-- <div style="height: 100vh;">
+  <mat-toolbar color="warn">
+    <mat-toolbar-row>
+      <button mat-icon-button (click)="sidenav.toggle()" fxShow="true" fxHide.md>
+        <mat-icon >menu</mat-icon>
+      </button>
+      <span>Responsive Navigation</span>
+      <span class="menu-spacer"></span>
+      <div fxShow="true" fxHide.lt-md>
+        <a href="#" mat-button>Menu Item 1</a>
+        <a href="#" mat-button>Menu Item 2</a>
+        <a href="#" mat-button>Menu Item 3</a>
+      </div>
+    </mat-toolbar-row>
+  </mat-toolbar>
+  <mat-sidenav-container fxFlexFill>
+    <mat-sidenav #sidenav>
+      <mat-nav-list>
+        <a (click)="sidenav.toggle()" href="" mat-list-item>Close</a>
+        <a href="#" mat-list-item>Menu Item 1</a>
+        <a href="#" mat-list-item>Menu Item 2</a>
+        <a href="#" mat-list-item>Menu Item 3</a>
+      </mat-nav-list>
+    </mat-sidenav>
+  </mat-sidenav-container>
+</div> -->
+
+<div fxLayout.xs="column" fxLayout="row" fxLayoutGap="10px">
+  <div fxFlex="20">
+    <mat-card class="widget_card">
+        <mat-card-content>
+            <p>Filter Trades</p>
+            <div class="example-container">
+              <mat-form-field>
+                <mat-select placeholder="Select..." id="filter_trades" name="filter_trades">
+                  <mat-option value="all">View All</mat-option>
+                  <mat-option value="allWins">All Wins</mat-option>
+                  <mat-option value="allLosses">All Loses</mat-option>
+                </mat-select>
+              </mat-form-field>
+            </div>
+          </mat-card-content>
+    </mat-card>
+  </div>
+  <div fxFlex="20">
+    <mat-card class="widget_card">
+      <mat-card-content>
+        <div fxLayout="column" fxLayoutAlign="center center">
+          <h1 class="value">50000</h1>
+          <mat-icon>bar_chart</mat-icon>
+          <p>Wins</p>
+        </div>
+      </mat-card-content>
+    </mat-card>
+  </div>
+  <div fxFlex="20">
+    <mat-card class="widget_card">
+      <mat-card-content>
+        <div fxLayout="column" fxLayoutAlign="center center">
+          <h1 class="value_loss">500</h1>
+          <mat-icon class="icon-sm">get_app</mat-icon>
+          <p>Losses</p>
+        </div>
+      </mat-card-content>
+    </mat-card>
+  </div>
+  <div fxFlex="20">
+    <mat-card class="widget_card">
+      <mat-card-content>
+        <div fxLayout="column" fxLayoutAlign="center center">
+          <h1 class="value_n">500</h1>
+          <mat-icon>event_note</mat-icon>
+          <p>Total Trades</p>
+        </div>
+      </mat-card-content>
+    </mat-card>
+  </div>
+  <div fxFlex="20">
+    <mat-card class="widget_card">
+      <mat-card-content>
+        <div fxLayout="column" fxLayoutAlign="center center">
+          <h1 class="value_n">500</h1>
+          <mat-icon>timeline</mat-icon>
+          <p>Winning Percentage</p>
+        </div>
+      </mat-card-content>
+    </mat-card>
+  </div>
+</div>

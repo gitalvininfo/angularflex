@@ -1,4 +1,4 @@
-.text-area-width {
+/* .text-area-width {
     width:100%;
 }
 
@@ -29,5 +29,34 @@ h2 {
 .about {
     text-align: justify;
     line-height: 2.5;
+} */
+
+.value {
+    margin-bottom: 0;
+    font-weight: 300;
+    color: #00cc7a;
 }
 
+.value_loss {
+    margin-bottom: 0;
+    font-weight: 300;
+    color: #f54040;
+}
+
+.value_n {
+    margin-bottom: 0;
+    font-weight: 300;
+}
+
+.widget_card {
+    padding:0;
+}
+
+.example-container > * {
+    width: 100%;
+  }
+
+  .example-container {
+    display: flex;
+    flex-direction: column;
+  }
