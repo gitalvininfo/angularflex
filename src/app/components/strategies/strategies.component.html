@@ -187,7 +187,7 @@
   </mat-sidenav-container>
 </div> -->
 
-<div fxLayout.xs="column" fxLayout="row" fxLayoutGap="10px">
+<!-- <div fxLayout.xs="column" fxLayout="row" fxLayoutGap="10px">
   <div fxFlex="20">
     <mat-card class="widget_card">
         <mat-card-content>
@@ -248,4 +248,42 @@
       </mat-card-content>
     </mat-card>
   </div>
+</div> -->
+
+<div fxLayout="row">
+  <table class="details_table" fxFlex="50" fxFlex.sm="100" fxFlex.xs="100">
+    <th class="pse_standard" colspan="2">PSE Standard Fee Calculation</th>
+    <br>
+    <tr>
+      <td>Buy Gross:</td>
+      <td>0.00</td>
+    </tr>
+    <tr>
+      <td>Buy Commision:</td>
+      <td>20.00</td>
+    </tr>
+    <tr>
+      <td>VAT:</td>
+      <td>2.40</td>
+    </tr>
+    <tr>
+      <td>SCCP:</td>
+      <td>0.00</td>
+    </tr>
+    <tr>
+      <td>PSE Trans Fee:</td>
+      <td>0.00</td>
+    </tr>
+    <br />
+    <tr class="highlight-row">
+      <td>Total Charge:</td>
+      <!-- <td>{{trade.gain()}}</td> -->
+      <td class="highlight-row-value">22.40</td>
+    </tr>
+    <tr class="highlight-row">
+      <td>Net:</td>
+      <!-- <td>{{trade.gain()}}</td> -->
+      <td class="highlight-row-value">22.40</td>
+    </tr>
+  </table>
 </div>
