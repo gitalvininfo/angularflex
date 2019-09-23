@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { MatMenuModule, MatButtonModule, MatToolbarModule, MatIconModule, MatBadgeModule, MatSidenavModule, MatListModule, MatGridListModule, MatFormFieldModule, MatInputModule, MatSelectModule, MatRadioModule, MatDatepickerModule,
+import { MatSnackBarModule, MatDialogModule, MatMenuModule, MatButtonModule, MatToolbarModule, MatIconModule, MatBadgeModule, MatSidenavModule, MatListModule, MatGridListModule, MatFormFieldModule, MatInputModule, MatSelectModule, MatRadioModule, MatDatepickerModule,
   MatNativeDateModule, MatChipsModule, MatTooltipModule, MatTableModule, MatPaginatorModule, MatCardModule} from '@angular/material';
 
 
@@ -8,6 +8,8 @@ import { MatMenuModule, MatButtonModule, MatToolbarModule, MatIconModule, MatBad
   declarations: [],
   imports: [
     CommonModule,
+    MatSnackBarModule,
+    MatDialogModule,
     MatMenuModule,
     MatButtonModule,
     MatToolbarModule,
@@ -29,6 +31,8 @@ import { MatMenuModule, MatButtonModule, MatToolbarModule, MatIconModule, MatBad
     MatCardModule
   ],
   exports: [
+    MatSnackBarModule,
+    MatDialogModule,
     MatMenuModule,
     MatButtonModule,
     MatToolbarModule,
@@ -49,7 +53,7 @@ import { MatMenuModule, MatButtonModule, MatToolbarModule, MatIconModule, MatBad
     MatCardModule
   ],
   providers: [
-    MatDatepickerModule,
+    // MatDatepickerModule,
     ]
 })
 export class MaterialModule { }

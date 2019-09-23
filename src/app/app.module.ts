@@ -1,6 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+// import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { NgModule } from '@angular/core';
 import { HttpClientModule } from '@angular/common/http';
 import { AppComponent } from './app.component';
@@ -11,6 +11,7 @@ import 'hammerjs';
 import { HeroesComponent } from './components/heroes/heroes.component';
 import { TemplatesComponent } from './components/templates/templates.component';
 import { StrategiesComponent } from './components/strategies/strategies.component';
+import { SharedModule } from './shared/shared.module';
 
 @NgModule({
   declarations: [
@@ -22,12 +23,14 @@ import { StrategiesComponent } from './components/strategies/strategies.componen
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
-    FormsModule,
-    ReactiveFormsModule,
+    // FormsModule,
+    // ReactiveFormsModule,
     MaterialModule,
     HttpClientModule,
     AppRoutingModule,
-    FlexLayoutModule
+    FlexLayoutModule,
+    SharedModule,
+  
 
   ],
   providers: [],
